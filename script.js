@@ -25,8 +25,8 @@
     });
 
     function animateTrail() {
-      trailX += (mouseX - trailX) * 0.12;
-      trailY += (mouseY - trailY) * 0.12;
+      trailX += (mouseX - trailX) * 0.15;
+      trailY += (mouseY - trailY) * 0.15;
       cursorTrail.style.left = trailX + 'px';
       cursorTrail.style.top = trailY + 'px';
       requestAnimationFrame(animateTrail);
@@ -63,8 +63,8 @@
       const flash = document.createElement('div');
       flash.style.cssText = `
         position: fixed; inset: 0; z-index: 9998; pointer-events: none;
-        background: ${next === 'light' ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.15)'};
-        animation: flashFade 0.4s ease forwards;
+        background: ${next === 'light' ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.12)'};
+        animation: flashFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
       `;
       const style = document.createElement('style');
       style.textContent = '@keyframes flashFade { from { opacity: 1; } to { opacity: 0; } }';
@@ -160,8 +160,8 @@
       }
     });
   }, {
-    threshold: 0.08,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.1,
+    rootMargin: '0px 0px -30px 0px'
   });
 
   revealElements.forEach(el => revealObserver.observe(el));
@@ -170,26 +170,25 @@
      SKILL BARS ANIMATION
   ===================== */
   const skillFills = document.querySelectorAll('.skill-fill');
-  const skillsAnimated = localStorage.getItem('kha2lil-skills-animated');
+  localStorage.removeItem('kha2lil-skills-animated');
 
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const fill = entry.target;
-        const targetWidth = fill.style.getPropertyValue('--width');
-        requestAnimationFrame(() => {
-          fill.style.width = targetWidth;
+  const skillsSection = document.querySelector('.skills-section');
+  if (skillsSection && skillFills.length) {
+    skillFills.forEach(fill => fill.style.width = '0%');
+
+    const skillSectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        skillFills.forEach(fill => {
+          const targetClass = Array.from(fill.classList).find(cls => cls.startsWith('w-'));
+          if (targetClass) fill.style.width = targetClass.replace('w-', '') + '%';
         });
-        skillObserver.unobserve(fill);
-        localStorage.setItem('kha2lil-skills-animated', 'true');
-      }
-    });
-  }, { threshold: 0.2 });
+        skillSectionObserver.disconnect();
+      });
+    }, { threshold: 0.1 });
 
-  skillFills.forEach(fill => {
-    if (!skillsAnimated) fill.style.width = '0%';
-    skillObserver.observe(fill);
-  });
+    skillSectionObserver.observe(skillsSection);
+  }
 
   /* =====================
      SMOOTH SCROLL
@@ -295,10 +294,10 @@
       function typeChar() {
         if (i < fullText.length) {
           textNode.textContent = fullText.slice(0, ++i);
-          setTimeout(typeChar, 40 + Math.random() * 30);
+          setTimeout(typeChar, 30 + Math.random() * 25);
         }
       }
-      setTimeout(typeChar, 1200);
+      setTimeout(typeChar, 1000);
     }
   }
 
@@ -313,7 +312,7 @@
         requestAnimationFrame(() => {
           const scrollY = window.scrollY;
           orbs.forEach((orb, i) => {
-            const speed = 0.08 + i * 0.04;
+            const speed = 0.1 + i * 0.03;
             orb.style.transform = `translateY(${scrollY * speed}px)`;
           });
           ticking = false;
@@ -332,9 +331,11 @@
         const rect = card.getBoundingClientRect();
         const x = (e.clientX - rect.left) / rect.width - 0.5;
         const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transition = 'transform 0.1s ease';
         card.style.transform = `translateY(-5px) rotateX(${-y * intensity}deg) rotateY(${x * intensity}deg)`;
       });
       card.addEventListener('mouseleave', () => {
+        card.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
         card.style.transform = '';
       });
     });
@@ -451,13 +452,13 @@
 
         if (!isNaN(num) && num > 1) {
           let start = 0;
-          const duration = 1200;
+          const duration = 1000;
           const startTime = performance.now();
 
           function tick(now) {
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            const ease = 1 - Math.pow(1 - progress, 3);
+            const ease = 1 - Math.pow(1 - progress, 4);
             const current = Math.floor(ease * num);
             el.textContent = current + suffix;
             if (progress < 1) requestAnimationFrame(tick);
