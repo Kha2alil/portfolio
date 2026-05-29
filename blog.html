@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kha2lil — Blog</title>
+  <meta name="description" content="Read kha2lil's blog on web development, software engineering, and the journey of a CS student building real-world projects and mastering full-stack development." />
+  <meta property="og:title" content="kha2lil — Blog" />
+  <meta property="og:description" content="Web development, software engineering insights, and project stories from a CS student." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kha2alil.github.io/portfolio/blog.html" />
+  <meta property="og:image" content="https://kha2alil.github.io/portfolio/assets/dzire-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="kha2lil — Blog" />
+  <meta name="twitter:description" content="Web development, software engineering insights, and project stories." />
+  <link rel="canonical" href="https://kha2alil.github.io/portfolio/blog.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" title="Home">
+        <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link" data-page="about" title="About me">About</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills" title="My skills">Skills</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects" title="My projects">Projects</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services" title="My services">Services</a></li>
+        <li><a href="journey.html" class="nav-link" data-page="journey" title="My journey">Journey</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog" title="My blog">Blog</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta" data-page="contact" title="Contact me">Contact</a></li>
+        <li class="nav-mobile-logo"><span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon sun" title="Light mode">☀</span>
+          <span class="theme-icon moon" title="Dark mode">◑</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" title="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <section class="blog section" id="blog" style="padding-top: 7rem">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="mono-tag">06</span> Blog
+      </div>
+      <h1 class="section-title reveal-up">Thoughts &<br /><em>insights.</em></h1>
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Crafted with precision &amp; passion.
+        </p>
+        <p class="footer-copy">© 2026 kha2lil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

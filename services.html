@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kha2lil — Services</title>
+  <meta name="description" content="Web development services by kha2lil: responsive websites, UI/UX interfaces, and full-stack applications. Clean code, modern design, and performance-first approach." />
+  <meta property="og:title" content="kha2lil — Services" />
+  <meta property="og:description" content="Responsive websites, UI/UX interfaces, and full-stack applications built with modern technologies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kha2alil.github.io/portfolio/services.html" />
+  <meta property="og:image" content="https://kha2alil.github.io/portfolio/assets/dzire-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="kha2lil — Services" />
+  <meta name="twitter:description" content="Responsive websites, UI/UX, and full-stack development services." />
+  <link rel="canonical" href="https://kha2alil.github.io/portfolio/services.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" title="Home">
+        <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link" data-page="about" title="About me">About</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills" title="My skills">Skills</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects" title="My projects">Projects</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services" title="My services">Services</a></li>
+        <li><a href="journey.html" class="nav-link" data-page="journey" title="My journey">Journey</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog" title="My blog">Blog</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta" data-page="contact" title="Contact me">Contact</a></li>
+        <li class="nav-mobile-logo"><span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon sun" title="Light mode">☀</span>
+          <span class="theme-icon moon" title="Dark mode">◑</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" title="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <section class="services section" id="services" style="padding-top: 7rem">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="mono-tag">04</span> Services
+      </div>
+      <h1 class="section-title reveal-up">What I can<br /><em>build for you.</em></h1>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" style="--delay: 0s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="service-title">Responsive Websites</h3>
+          <p class="service-desc">Pixel-perfect, mobile-first websites that look stunning across all devices. From simple landing pages to multi-section marketing sites.</p>
+          <ul class="service-features">
+            <li>Mobile-first responsive design</li>
+            <li>Cross-browser compatibility</li>
+            <li>Performance optimized</li>
+            <li>Modern CSS techniques</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.1s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service-title">UI/UX Interfaces</h3>
+          <p class="service-desc">Modern, clean user interfaces with exceptional attention to detail — typography, spacing, color, and interaction design that feels premium.</p>
+          <ul class="service-features">
+            <li>Custom UI components</li>
+            <li>Micro-interactions & animations</li>
+            <li>Design system implementation</li>
+            <li>Accessibility-aware</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.2s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="service-title">Full-Stack Apps</h3>
+          <p class="service-desc">End-to-end web application development — from frontend interfaces to backend logic and database management. Growing capabilities.</p>
+          <ul class="service-features">
+            <li>Frontend + Backend integration</li>
+            <li>Database design & SQL</li>
+            <li>PHP backend development</li>
+            <li>Future: React + Spring Boot</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.3s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="2"/></svg>
+          </div>
+          <h3 class="service-title">Desktop Apps</h3>
+          <p class="service-desc">Native desktop applications built with Java &amp; JavaFX — multithreaded, responsive, and feature-rich with custom UIs and file processing capabilities.</p>
+          <ul class="service-features">
+            <li>Java &amp; JavaFX development</li>
+            <li>Multithreaded processing</li>
+            <li>File I/O &amp; report generation</li>
+            <li>Clean MVC architecture</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Crafted with precision &amp; passion.
+        </p>
+        <p class="footer-copy">© 2026 kha2lil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

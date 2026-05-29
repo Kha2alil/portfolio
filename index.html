@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kha2lil — Software Engineer</title>
+  <meta name="description" content="Khalil Khalfi (kha2lil) — Computer Science student & aspiring full-stack engineer. Building scalable digital experiences with Java, JavaScript, and modern CSS." />
+  <meta property="og:title" content="kha2lil — Software Engineer" />
+  <meta property="og:description" content="CS student & full-stack engineer in the making. Building scalable digital experiences with clean code and modern design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kha2alil.github.io/portfolio/" />
+  <meta property="og:image" content="https://kha2alil.github.io/portfolio/assets/dzire-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="kha2lil — Software Engineer" />
+  <meta name="twitter:description" content="CS student & full-stack engineer in the making. Building scalable digital experiences." />
+  <link rel="canonical" href="https://kha2alil.github.io/portfolio/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Khalil Khalfi",
+    "alternateName": "kha2lil",
+    "url": "https://kha2alil.github.io/portfolio/",
+    "jobTitle": "Software Engineer Student",
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Java", "JavaFX", "SQL"],
+    "seeks": ["Full-Stack Developer Role", "Internship"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" title="Home">
+        <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link" data-page="about" title="About me">About</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills" title="My skills">Skills</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects" title="My projects">Projects</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services" title="My services">Services</a></li>
+        <li><a href="journey.html" class="nav-link" data-page="journey" title="My journey">Journey</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog" title="My blog">Blog</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta" data-page="contact" title="Contact me">Contact</a></li>
+        <li class="nav-mobile-logo"><span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon sun" title="Light mode">☀</span>
+          <span class="theme-icon moon" title="Dark mode">◑</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" title="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title reveal-up">
+          <span class="title-line">Building</span>
+          <span class="title-line title-accent">Scalable</span>
+          <span class="title-line">Digital</span>
+          <span class="title-line">Experiences</span>
+        </h1>
+        <p class="hero-sub reveal-up">
+          <span class="mono-tag">&lt;dev&gt;</span>
+          CS student &amp; future full-stack engineer. Crafting clean, performant web applications with a passion for elegant code and exceptional user experiences.
+          <span class="mono-tag">&lt;/dev&gt;</span>
+        </p>
+        <div class="hero-cta reveal-up">
+          <a href="projects.html" class="btn btn-primary" title="View my projects">
+            <span>View Projects</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-ghost" title="Get in touch">
+            <span>Contact Me</span>
+          </a>
+        </div>
+        <div class="hero-stats reveal-up">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3rd</span>
+            <span class="stat-label">Year CS</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image reveal-right">
+        <div class="hero-image-inner">
+          <img src="assets/kha2lil2.png" alt="Khalil Khalfi - kha2lil" class="hero-img" loading="eager" />
+          <div class="hero-img-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="mono-tag">01</span> About
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title reveal-up">Driven by code.<br /><em>Defined by craft.</em></h2>
+          <div class="about-story reveal-up">
+            <p>
+              I'm <strong>kha2lil</strong> — a Computer Science student entering my 3rd year with a clear mission: become a high-level full-stack engineer who builds products that matter.
+            </p>
+            <p>
+              My journey started with HTML &amp; CSS, where I built a solid foundation in responsive design and modern UI patterns. Now I'm pushing into JavaScript, with React and Spring Boot on the horizon.
+            </p>
+            <p>
+              I don't just learn technologies — I engineer solutions. Every project is a system problem. Every line of code is a decision. I approach development the way a architect approaches a building: with precision, foresight, and an eye for what lasts.
+            </p>
+          </div>
+          <div class="about-tags reveal-up">
+            <span class="tag">Growth Mindset</span>
+            <span class="tag">Engineering Thinking</span>
+            <span class="tag">Discipline</span>
+            <span class="tag">Top of Class</span>
+          </div>
+        </div>
+        <div class="about-visual reveal-right">
+          <div class="about-card">
+            <div class="about-card-header">
+              <span class="card-dot red"></span>
+              <span class="card-dot yellow"></span>
+              <span class="card-dot green"></span>
+              <span class="card-file">kha2lil.json</span>
+            </div>
+            <div class="about-card-body">
+              <pre class="code-block"><span class="c-bracket">{</span>
+                <span class="c-key">"name"</span>: <span class="c-str">"khalil"</span>,
+                <span class="c-key">"lastname"</span>: <span class="c-str">"khalfi"</span>,
+                <span class="c-key">"role"</span>: <span class="c-str">"Software Engineer"</span>,
+                <span class="c-key">"status"</span>: <span class="c-str">"CS Student, Year 3(finished)"</span>,
+                <span class="c-key">"focus"</span>: <span class="c-arr">[</span>
+                  <span class="c-str">"Full-Stack Dev"</span>,
+                  <span class="c-str">"Clean Architecture"</span>,
+                  <span class="c-str">"Scalable Systems"</span>
+                <span class="c-arr">]</span>,
+                <span class="c-key">"learning"</span>: <span class="c-str">"JavaScript → React"</span>,
+                <span class="c-key">"goal"</span>: <span class="c-str">"Top-tier engineer"</span>,
+                <span class="c-key">"available"</span>: <span class="c-bool">true</span>
+              <span class="c-bracket">}</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Crafted with precision &amp; passion.
+        </p>
+        <p class="footer-copy">© 2026 kha2lil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kha2lil — Journey</title>
+  <meta name="description" content="kha2lil's development journey — from HTML & CSS foundations to JavaScript mastery and full-stack engineering. Tracking the path of a CS student building real-world projects." />
+  <meta property="og:title" content="kha2lil — Journey" />
+  <meta property="og:description" content="From HTML foundations to full-stack engineering — tracking the development journey of kha2lil." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kha2alil.github.io/portfolio/journey.html" />
+  <meta property="og:image" content="https://kha2alil.github.io/portfolio/assets/dzire-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="kha2lil — Journey" />
+  <meta name="twitter:description" content="From HTML foundations to full-stack engineering — the learning journey." />
+  <link rel="canonical" href="https://kha2alil.github.io/portfolio/journey.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" title="Home">
+        <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link" data-page="about" title="About me">About</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills" title="My skills">Skills</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects" title="My projects">Projects</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services" title="My services">Services</a></li>
+        <li><a href="journey.html" class="nav-link" data-page="journey" title="My journey">Journey</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog" title="My blog">Blog</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta" data-page="contact" title="Contact me">Contact</a></li>
+        <li class="nav-mobile-logo"><span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon sun" title="Light mode">☀</span>
+          <span class="theme-icon moon" title="Dark mode">◑</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" title="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <section class="journey section" id="journey" style="padding-top: 7rem">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="mono-tag">05</span> Journey
+      </div>
+      <h1 class="section-title reveal-up">The road to<br /><em>mastery.</em></h1>
+
+      <div class="journey-filters reveal-up">
+        <button class="journey-filter active" data-filter="all" title="Show all milestones">All</button>
+        <button class="journey-filter" data-filter="frontend" title="Filter by frontend">Frontend</button>
+        <button class="journey-filter" data-filter="backend" title="Filter by backend">Backend</button>
+        <button class="journey-filter" data-filter="tools" title="Filter by tools">Tools & Workflow</button>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0s" data-category="frontend">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 1</div>
+            <h3 class="timeline-title">HTML5</h3>
+            <p class="timeline-desc">Built a solid foundation with semantic HTML — structure, accessibility, and clean markup that forms the backbone of every web project.</p>
+            <div class="timeline-tags">
+              <span>HTML5</span><span>Semantic</span><span>Accessibility</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.04s" data-category="frontend">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 2</div>
+            <h3 class="timeline-title">CSS3</h3>
+            <p class="timeline-desc">Mastered modern CSS — Flexbox, Grid, animations, responsive design, and custom properties. Created pixel-perfect layouts across all devices.</p>
+            <div class="timeline-tags">
+              <span>CSS3</span><span>Flexbox</span><span>Grid</span><span>Responsive</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.08s" data-category="frontend">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 3</div>
+            <h3 class="timeline-title">Bootstrap</h3>
+            <p class="timeline-desc">Leveraged Bootstrap's component library and grid system for rapid prototyping and responsive layouts — speeding up development without sacrificing quality.</p>
+            <div class="timeline-tags">
+              <span>Bootstrap</span><span>Components</span><span>Grid</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.12s" data-category="frontend">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 4</div>
+            <h3 class="timeline-title">Tailwind CSS</h3>
+            <p class="timeline-desc">Embraced utility-first CSS with Tailwind — building custom designs faster with a composable, constraint-based approach to styling.</p>
+            <div class="timeline-tags">
+              <span>Tailwind</span><span>Utility-First</span><span>Design</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.16s" data-category="tools">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 5</div>
+            <h3 class="timeline-title">Git & GitHub</h3>
+            <p class="timeline-desc">Adopted version control workflows — branching, merging, pull requests, and collaborative development. Managing projects with confidence and traceability.</p>
+            <div class="timeline-tags">
+              <span>Git</span><span>GitHub</span><span>Version Control</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.2s" data-category="backend">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 6</div>
+            <h3 class="timeline-title">Java & OOP</h3>
+            <p class="timeline-desc">Built strong object-oriented programming foundations with Java — classes, inheritance, polymorphism, and design patterns applied in real projects.</p>
+            <div class="timeline-tags">
+              <span>Java</span><span>OOP</span><span>Polymorphism</span><span>Design Patterns</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.24s" data-category="backend">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 7</div>
+            <h3 class="timeline-title">SQL & Databases</h3>
+            <p class="timeline-desc">Learned relational database design, SQL queries, normalization, and data modeling — managing structured data with confidence and efficiency.</p>
+            <div class="timeline-tags">
+              <span>SQL</span><span>MySQL</span><span>Normalization</span><span>Data Modeling</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item active reveal-up" style="--delay: 0.28s" data-category="frontend">
+          <div class="timeline-connector">
+            <div class="timeline-dot active-dot">
+              <div class="dot-pulse"></div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="5 12 10 17 20 7"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 8 — Now</div>
+            <h3 class="timeline-title">JavaScript</h3>
+            <p class="timeline-desc">Currently diving deep into JavaScript — DOM manipulation, ES6+, async programming, and building interactive web experiences.</p>
+            <div class="timeline-tags">
+              <span>ES6+</span><span>DOM</span><span>Async/Await</span><span>APIs</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot active-status-dot"></span>
+              In Progress
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item active reveal-up" style="--delay: 0.32s" data-category="backend">
+          <div class="timeline-connector">
+            <div class="timeline-dot active-dot">
+              <div class="dot-pulse"></div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="5 12 10 17 20 7"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 9 — Now</div>
+            <h3 class="timeline-title">Node.js & Express</h3>
+            <p class="timeline-desc">Building backend skills with Node.js and Express — REST APIs, middleware, routing, and server-side logic for full-stack applications.</p>
+            <div class="timeline-tags">
+              <span>Node.js</span><span>Express</span><span>REST APIs</span><span>Middleware</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot active-status-dot"></span>
+              In Progress
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item upcoming reveal-up" style="--delay: 0.36s" data-category="frontend">
+          <div class="timeline-connector">
+            <div class="timeline-dot upcoming-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 10 — Next</div>
+            <h3 class="timeline-title">React</h3>
+            <p class="timeline-desc">The next frontier — component-based architecture, state management, hooks, and building complex Single Page Applications.</p>
+            <div class="timeline-tags">
+              <span>Components</span><span>State</span><span>Hooks</span><span>SPA</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot upcoming-status-dot"></span>
+              Coming Next
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item upcoming reveal-up" style="--delay: 0.4s" data-category="backend">
+          <div class="timeline-connector">
+            <div class="timeline-dot upcoming-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 11 — Future</div>
+            <h3 class="timeline-title">Spring Boot</h3>
+            <p class="timeline-desc">Enterprise backend development with Spring Boot — dependency injection, RESTful services, JPA, and building production-ready Java applications.</p>
+            <div class="timeline-tags">
+              <span>Spring Boot</span><span>JPA</span><span>REST</span><span>Enterprise</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot upcoming-status-dot"></span>
+              Future Goal
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.44s" data-category="tools">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Toolkit</div>
+            <h3 class="timeline-title">Agile & Jira</h3>
+            <p class="timeline-desc">Agile methodologies with Scrum — sprint planning, standups, retrospectives, and project tracking using Jira for team coordination.</p>
+            <div class="timeline-tags">
+              <span>Scrum</span><span>Sprints</span><span>Jira</span><span>Standups</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item completed reveal-up" style="--delay: 0.48s" data-category="tools">
+          <div class="timeline-connector">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Toolkit</div>
+            <h3 class="timeline-title">LaTeX</h3>
+            <p class="timeline-desc">Academic and technical document preparation — structured reports, theses, and research papers with precise typesetting.</p>
+            <div class="timeline-tags">
+              <span>Documents</span><span>Reports</span><span>Typesetting</span><span>Academic</span>
+            </div>
+            <div class="timeline-status">
+              <span class="status-dot completed-dot"></span>
+              Completed
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Crafted with precision &amp; passion.
+        </p>
+        <p class="footer-copy">© 2026 kha2lil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

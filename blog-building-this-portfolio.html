@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kha2lil — Building This Portfolio</title>
+  <meta name="description" content="A deep dive into the design decisions, CSS architecture, and philosophy behind kha2lil's portfolio — a case study in modern web development." />
+  <meta property="og:title" content="kha2lil — Building This Portfolio: A Case Study" />
+  <meta property="og:description" content="Design decisions, CSS architecture, and the philosophy behind every pixel of this site." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://kha2alil.github.io/portfolio/blog-building-this-portfolio.html" />
+  <meta property="og:image" content="https://kha2alil.github.io/portfolio/assets/dzire-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://kha2alil.github.io/portfolio/blog-building-this-portfolio.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" title="Home">
+        <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link" data-page="about" title="About me">About</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills" title="My skills">Skills</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects" title="My projects">Projects</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services" title="My services">Services</a></li>
+        <li><a href="journey.html" class="nav-link" data-page="journey" title="My journey">Journey</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog" title="My blog">Blog</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta" data-page="contact" title="Contact me">Contact</a></li>
+        <li class="nav-mobile-logo"><span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon sun" title="Light mode">☀</span>
+          <span class="theme-icon moon" title="Dark mode">◑</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" title="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <article class="blog-article section blog-article-hero">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="mono-tag">06</span> Blog
+      </div>
+      <header class="blog-article-header reveal-up">
+        <div class="blog-article-meta">
+          <span class="blog-article-date">May 2026</span>
+          <span class="blog-article-tag">CSS</span>
+          <span class="blog-article-tag">Design</span>
+          <span class="blog-article-tag">Project</span>
+        </div>
+        <h1 class="blog-article-title">Building This Portfolio<br /><em>A Case Study</em></h1>
+      </header>
+
+      <div class="blog-article-body reveal-up">
+        <p class="blog-article-lede">
+          Every pixel, every animation, every line of CSS — this portfolio wasn't designed. It was engineered. Here's the story behind its creation.
+        </p>
+
+        <h2>The Vision</h2>
+        <p>
+          I didn't want a template. I wanted a <strong>system</strong>. A digital presence that reflects how I think about code: structured, intentional, and obsessed with craft. The brief was simple — build a multi-page portfolio that feels like a product, not a resume.
+        </p>
+
+        <h2>Design System First</h2>
+        <p>
+          Before writing a single line of HTML, I defined the design tokens: dark primary (<code>#060608</code>), amber gold accent (<code>#d4a843</code>), and a typography stack built around Syne (display), Outfit (body), and DM Mono (code). Every color, spacing unit, and font weight was locked in as CSS custom properties before any component existed.
+        </p>
+        <p>
+          The dark theme isn't just an afterthought — it's the <em>primary</em> theme. The light theme was derived from it, ensuring both modes feel equally polished. This approach, dark-first, guarantees the portfolio looks its best in the environment where most developers and recruiters will view it.
+        </p>
+
+        <h2>Architecture Decisions</h2>
+        <p>
+          This site is pure HTML, CSS, and JavaScript — no frameworks, no build tools. Every page is a static <code>.html</code> file, making it instantly deployable, lightning fast, and fully crawlable by search engines. The trade-off? More manual work maintaining shared components like the navbar and footer across 7+ pages.
+        </p>
+        <p>
+          The navigation uses a hash-scroll pattern for cross-page anchoring (<code>index.html#about</code>), giving the illusion of a single-page app while keeping the benefits of static HTML. The mobile nav slides in from the right with a blur backdrop — a pattern common in SaaS products, recreated here without a single dependency.
+        </p>
+
+        <h2>Visual Identity</h2>
+        <p>
+          The amber gold accent isn't decorative — it's structural. It draws the eye to interactive elements, section labels, and the JSON card on the About page. The custom cursor with <code>mix-blend-mode: difference</code> creates a premium, exploratory feel. The noise overlay adds texture to what would otherwise be flat dark surfaces.
+        </p>
+        <p>
+          Perhaps the most intentional detail: the hero animation. Instead of relying on JavaScript scroll triggers, I used CSS keyframes (<code>heroReveal</code>) with staggered delays for each title line. The result is a page that loads <em>ready</em> — no layout shifts, no flickering — immediately communicating quality.
+        </p>
+
+        <h2>The Project Cards</h2>
+        <p>
+          The Dzire and MultiThreaded Text Analyzer cards aren't just links — they're entry points into rich modals with role-based screenshot tabs and video demos. The modal system was refactored into a reusable <code>setupModal()</code> function that handles open, close, and overlay click for any project. The Dzire modal includes role tabs (Visitor, Student, Teacher, Admin) that swap screenshots dynamically, giving a product tour experience without leaving the page.
+        </p>
+
+        <h2>Performance & SEO</h2>
+        <p>
+          Every page includes Open Graph tags, Twitter cards, canonical URLs, and JSON-LD structured data. Images use <code>loading="lazy"</code> with <code>object-fit: cover</code> for consistent cropping. The CSS is a single 2000+ line file — intentionally unminified during development for readability, ready for production minification.
+        </p>
+
+        <h2>Lessons Learned</h2>
+        <ul>
+          <li><strong>Design in the browser</strong> — mockups lie. The real design happens in CSS.</li>
+          <li><strong>Dark-first theming</strong> is easier than retrofitting dark mode onto a light design.</li>
+          <li><strong>CSS custom properties</strong> make theme switching trivial — one attribute change on <code>&lt;html&gt;</code> swaps the entire palette.</li>
+          <li><strong>Static doesn't mean simple</strong> — a multi-page static site requires more discipline than a framework, but the performance payoff is real.</li>
+        </ul>
+
+        <p class="blog-article-footer">
+          Built with precision, passion, and way too many hours in the browser inspector.
+        </p>
+      </div>
+
+      <div class="blog-article-nav reveal-up">
+        <a href="blog.html" class="btn btn-ghost" title="Back to blog listing">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to Blog
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Crafted with precision &amp; passion.
+        </p>
+        <p class="footer-copy">© 2026 kha2lil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

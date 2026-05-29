@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kha2lil — Projects</title>
+  <meta name="description" content="Portfolio projects by kha2lil: Dzire — AI-powered gamified e-learning platform, and MultiThreaded Text Analyzer — JavaFX desktop application for text analysis." />
+  <meta property="og:title" content="kha2lil — Projects" />
+  <meta property="og:description" content="Real-world projects built by kha2lil: Dzire e-learning platform and MultiThreaded Text Analyzer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kha2alil.github.io/portfolio/projects.html" />
+  <meta property="og:image" content="https://kha2alil.github.io/portfolio/assets/dzire-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="kha2lil — Projects" />
+  <meta name="twitter:description" content="Real-world projects: Dzire e-learning platform and MultiThreaded Text Analyzer." />
+  <link rel="canonical" href="https://kha2alil.github.io/portfolio/projects.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" title="Home">
+        <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link" data-page="about" title="About me">About</a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills" title="My skills">Skills</a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects" title="My projects">Projects</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services" title="My services">Services</a></li>
+        <li><a href="journey.html" class="nav-link" data-page="journey" title="My journey">Journey</a></li>
+        <li><a href="blog.html" class="nav-link" data-page="blog" title="My blog">Blog</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-cta" data-page="contact" title="Contact me">Contact</a></li>
+        <li class="nav-mobile-logo"><span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon sun" title="Light mode">☀</span>
+          <span class="theme-icon moon" title="Dark mode">◑</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" title="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="mono-tag">03</span> Projects
+      </div>
+      <h1 class="section-title reveal-up">Products I've<br /><em>shipped.</em></h1>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up project-card-clickable project-featured" data-project="dzire" title="Click for details">
+          <div class="project-card-inner">
+            <div class="project-visual pv-dzire">
+              <img src="assets/dzire-hero.png" alt="Dzire platform screenshot" class="project-screenshot" loading="lazy" title="Dzire platform preview" />
+            </div>
+            <div class="project-info">
+              <span class="project-num">01</span>
+              <span class="project-type">Web App</span>
+              <h3 class="project-title">Dzire</h3>
+              <p class="project-desc">An AI-powered gamified e-learning platform for web development. Multi-role interface with real-time interactions and a built-in code editor.</p>
+              <div class="project-stack">
+                <span class="stack-tag">HTML5</span>
+                <span class="stack-tag">CSS3</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">Axios</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express.js</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">CodeMirror</span>
+              </div>
+              <div class="project-links">
+                <a href="https://kha2alil.github.io/dzire-platform-frontend/" target="_blank" class="project-link" rel="noopener noreferrer" title="Live demo of Dzire">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/Kha2alil/dzire-platform-frontend" target="_blank" class="project-link project-link-github" rel="noopener noreferrer" title="View source on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-featured reveal-up project-card-clickable project-card-delay-01" data-project="text-analyzer" title="Click for details">
+          <div class="project-card-inner">
+            <div class="project-visual pv-analyzer">
+              <img src="assets/Mutithread.png" alt="MultiThreaded Text Analyzer screenshot" class="project-screenshot" loading="lazy" title="Text Analyzer preview" />
+            </div>
+            <div class="project-info">
+              <span class="project-num">02</span>
+              <span class="project-type">Desktop App</span>
+              <h3 class="project-title">MultiThreaded Text Analyzer</h3>
+              <p class="project-desc">A JavaFX desktop app that processes multiple files simultaneously using multithreading — extracts word counts, reading time, language detection, and exports reports to PDF/Word.</p>
+              <div class="project-stack">
+                <span class="stack-tag">Java 21</span>
+                <span class="stack-tag">JavaFX</span>
+                <span class="stack-tag">Maven</span>
+                <span class="stack-tag">Multithreading</span>
+                <span class="stack-tag">Apache POI</span>
+                <span class="stack-tag">PDFBox</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Kha2alil/MultiThread-Text-Analyzer" target="_blank" class="project-link project-link-github" rel="noopener noreferrer" title="View source on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>kha2lil<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          Crafted with precision &amp; passion.
+        </p>
+        <p class="footer-copy">© 2026 kha2lil. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close" title="Close modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-visual">
+        <img src="assets/dzire-hero.png" alt="Dzire platform screenshot" class="modal-screenshot" id="modalScreenshot" loading="lazy" />
+        <div class="modal-screenshot-fallback" id="modalScreenshotFallback">
+          <p>Add screenshot to <code>assets/dzire-visitor.png</code></p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-roles-tabs" id="roleTabs">
+          <button class="role-tab active" data-role="visitor" title="View as visitor">Visitor</button>
+          <button class="role-tab" data-role="student" title="View as student">Student</button>
+          <button class="role-tab" data-role="teacher" title="View as teacher">Teacher</button>
+          <button class="role-tab" data-role="admin" title="View as admin">Admin</button>
+        </div>
+        <span class="modal-tag">Featured Project</span>
+        <span class="modal-tag-type">Web App</span>
+        <h2 class="modal-title">Dzire</h2>
+        <p class="modal-subtitle">AI-Powered Gamified E-Learning Platform</p>
+        <p class="modal-desc">
+          An AI-powered gamified e-learning platform focused on web development. Multi-role interface (student, teacher, admin) with real-time interactions, gamification elements, and a built-in code editor for coding challenges.
+        </p>
+        <div class="modal-features">
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <span>Multi-role auth (student, teacher, admin)</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Gamification: XP, levels, badges & leaderboard</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16c0 1.1.9 2 2 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6M12 18v-6M9 15h6"/></svg>
+            <span>Boss Exam IDE with CodeMirror & AI grading</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <span>FAQ chatbot with keyword matching + AI fallback</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            <span>Teacher analytics & drag-and-drop course builder</span>
+          </div>
+        </div>
+        <div class="modal-stack">
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">Axios</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">MySQL</span>
+              <span class="stack-tag">CodeMirror</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://kha2alil.github.io/dzire-platform-frontend/" target="_blank" class="btn btn-primary" rel="noopener noreferrer" title="Open live demo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Live Demo
+          </a>
+          <a href="https://github.com/Kha2alil/dzire-platform-frontend" target="_blank" class="btn btn-ghost" rel="noopener noreferrer" title="View source code">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            View Source
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="textAnalyzerModal">
+    <div class="modal">
+      <button class="modal-close" id="taModalClose" aria-label="Close" title="Close modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-visual">
+        <video src="assets/0522.mp4" class="modal-video" controls autoplay muted loop></video>
+      </div>
+      <div class="modal-body">
+        <span class="modal-tag">Project</span>
+        <span class="modal-tag-type">Desktop App</span>
+        <h2 class="modal-title">MultiThreaded Text Analyzer</h2>
+        <p class="modal-subtitle">JavaFX Multithreaded Desktop Application</p>
+        <p class="modal-desc">
+          A highly responsive, multithreaded desktop application built with JavaFX for analyzing text, documents, and code files. Extract metrics, visualize data, and export your reports seamlessly.
+        </p>
+        <div class="modal-features">
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Multithreaded processing — analyze dozens of files without UI lag</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            <span>Supports .txt, .csv, .log, .docx, and .pdf files</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            <span>Deep metrics: word count, reading time, language detection, term extraction</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <span>Export reports to PDF, Word (.docx), or plain text</span>
+          </div>
+          <div class="modal-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            <span>MVC architecture with Java 21, JavaFX, Apache POI &amp; PDFBox</span>
+          </div>
+        </div>
+        <div class="modal-stack">
+          <span class="stack-tag">Java 21</span>
+          <span class="stack-tag">JavaFX</span>
+          <span class="stack-tag">Maven</span>
+          <span class="stack-tag">Multithreading</span>
+          <span class="stack-tag">Apache POI</span>
+          <span class="stack-tag">PDFBox</span>
+          <span class="stack-tag">OpenPDF</span>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/Kha2alil/MultiThread-Text-Analyzer" target="_blank" class="btn btn-ghost btn-full" rel="noopener noreferrer" title="View source code on GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            View Source
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
